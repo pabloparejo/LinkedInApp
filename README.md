@@ -1,2 +1,2 @@
 # LinkedInApp
-Simple iOS app to show CV
+Simple iOS app to display a CV

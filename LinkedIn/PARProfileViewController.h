@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PARProfileViewController.h
 //  LinkedIn
 //
 //  Created by parejo on 28/4/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PARProfileViewController : UIViewController
 
 @end
-

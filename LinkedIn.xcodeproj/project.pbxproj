@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		C57309F61AF002B000CAEE24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57309F51AF002B000CAEE24 /* main.m */; };
 		C57309F91AF002B000CAEE24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57309F81AF002B000CAEE24 /* AppDelegate.m */; };
-		C57309FC1AF002B000CAEE24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57309FB1AF002B000CAEE24 /* ViewController.m */; };
-		C57309FF1AF002B000CAEE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57309FD1AF002B000CAEE24 /* Main.storyboard */; };
 		C5730A011AF002B000CAEE24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5730A001AF002B000CAEE24 /* Images.xcassets */; };
 		C5730A041AF002B000CAEE24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5730A021AF002B000CAEE24 /* LaunchScreen.xib */; };
 		C5730A101AF002B000CAEE24 /* LinkedInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5730A0F1AF002B000CAEE24 /* LinkedInTests.m */; };
+		C5730A1D1AF00B6D00CAEE24 /* PARProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */; };
+		C5730A1E1AF00B6D00CAEE24 /* PARProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */; };
+		C5730A211AF015F900CAEE24 /* pabloparejo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5730A201AF015F900CAEE24 /* pabloparejo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,15 @@
 		C57309F51AF002B000CAEE24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C57309F71AF002B000CAEE24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C57309F81AF002B000CAEE24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C57309FA1AF002B000CAEE24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C57309FB1AF002B000CAEE24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C57309FE1AF002B000CAEE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5730A001AF002B000CAEE24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C5730A031AF002B000CAEE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C5730A091AF002B000CAEE24 /* LinkedInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5730A0E1AF002B000CAEE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5730A0F1AF002B000CAEE24 /* LinkedInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedInTests.m; sourceTree = "<group>"; };
+		C5730A1A1AF00B6D00CAEE24 /* PARProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARProfileViewController.h; sourceTree = "<group>"; };
+		C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARProfileViewController.m; sourceTree = "<group>"; };
+		C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PARProfileViewController.xib; sourceTree = "<group>"; };
+		C5730A201AF015F900CAEE24 /* pabloparejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pabloparejo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +85,8 @@
 			children = (
 				C57309F71AF002B000CAEE24 /* AppDelegate.h */,
 				C57309F81AF002B000CAEE24 /* AppDelegate.m */,
-				C57309FA1AF002B000CAEE24 /* ViewController.h */,
-				C57309FB1AF002B000CAEE24 /* ViewController.m */,
-				C57309FD1AF002B000CAEE24 /* Main.storyboard */,
+				C5730A201AF015F900CAEE24 /* pabloparejo.png */,
+				C5730A1F1AF00B7800CAEE24 /* Profile */,
 				C5730A001AF002B000CAEE24 /* Images.xcassets */,
 				C5730A021AF002B000CAEE24 /* LaunchScreen.xib */,
 				C57309F31AF002B000CAEE24 /* Supporting Files */,
@@ -117,6 +118,16 @@
 				C5730A0E1AF002B000CAEE24 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5730A1F1AF00B7800CAEE24 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C5730A1A1AF00B6D00CAEE24 /* PARProfileViewController.h */,
+				C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */,
+				C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57309FF1AF002B000CAEE24 /* Main.storyboard in Resources */,
 				C5730A041AF002B000CAEE24 /* LaunchScreen.xib in Resources */,
+				C5730A211AF015F900CAEE24 /* pabloparejo.png in Resources */,
+				C5730A1E1AF00B6D00CAEE24 /* PARProfileViewController.xib in Resources */,
 				C5730A011AF002B000CAEE24 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57309FC1AF002B000CAEE24 /* ViewController.m in Sources */,
 				C57309F91AF002B000CAEE24 /* AppDelegate.m in Sources */,
 				C57309F61AF002B000CAEE24 /* main.m in Sources */,
+				C5730A1D1AF00B6D00CAEE24 /* PARProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +256,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C57309FD1AF002B000CAEE24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C57309FE1AF002B000CAEE24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C5730A021AF002B000CAEE24 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -350,6 +354,7 @@
 				INFOPLIST_FILE = LinkedIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -360,6 +365,7 @@
 				INFOPLIST_FILE = LinkedIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

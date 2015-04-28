@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PARProfileViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pabloparejo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ozT-XQ-vHa">
+                    <rect key="frame" x="0.0" y="60" width="320" height="266"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqt-Qo-BIj">
+                    <rect key="frame" x="0.0" y="280" width="320" height="46"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HJ1-d6-vxB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd3-Jq-M7H">
+                                <rect key="frame" x="8" y="5" width="304" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="22k-WD-QHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="xd3-Jq-M7H" secondAttribute="centerY" id="De4-mc-he4"/>
+                            <constraint firstAttribute="centerX" secondItem="xd3-Jq-M7H" secondAttribute="centerX" id="Q7L-Ez-FEM"/>
+                            <constraint firstAttribute="trailing" secondItem="xd3-Jq-M7H" secondAttribute="trailing" constant="8" id="g3J-Hm-zou"/>
+                            <constraint firstItem="xd3-Jq-M7H" firstAttribute="leading" secondItem="HJ1-d6-vxB" secondAttribute="leading" constant="8" id="hFz-o4-PNF"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="YuL-gc-QZs"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educationLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tY-VL-B3n">
+                    <rect key="frame" x="8" y="363" width="304" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="occupationLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-ao-Dvl">
+                    <rect key="frame" x="8" y="334" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6Ls-VK-U65"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1tY-VL-B3n" firstAttribute="height" secondItem="CQ5-ao-Dvl" secondAttribute="height" id="494-hq-dAV"/>
+                <constraint firstItem="1tY-VL-B3n" firstAttribute="centerX" secondItem="CQ5-ao-Dvl" secondAttribute="centerX" id="9tz-3j-mgs"/>
+                <constraint firstAttribute="trailing" secondItem="ozT-XQ-vHa" secondAttribute="trailing" id="M8q-PW-xTD"/>
+                <constraint firstAttribute="trailing" secondItem="uqt-Qo-BIj" secondAttribute="trailing" id="Mqz-ES-aA9"/>
+                <constraint firstItem="uqt-Qo-BIj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OP1-zb-dPt"/>
+                <constraint firstAttribute="trailing" secondItem="CQ5-ao-Dvl" secondAttribute="trailing" constant="8" id="T1k-ON-9eM"/>
+                <constraint firstItem="1tY-VL-B3n" firstAttribute="top" secondItem="CQ5-ao-Dvl" secondAttribute="bottom" constant="8" id="XtT-6h-GWr"/>
+                <constraint firstAttribute="centerY" secondItem="CQ5-ao-Dvl" secondAttribute="centerY" constant="-60" id="aoL-X5-sN7"/>
+                <constraint firstItem="CQ5-ao-Dvl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dTb-wz-9nK"/>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="bottom" secondItem="uqt-Qo-BIj" secondAttribute="bottom" id="i39-r5-eSo"/>
+                <constraint firstItem="1tY-VL-B3n" firstAttribute="width" secondItem="CQ5-ao-Dvl" secondAttribute="width" id="idJ-7X-KxQ"/>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lnu-D3-Epc"/>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="xBe-OK-95o"/>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="bottom" secondItem="CQ5-ao-Dvl" secondAttribute="top" constant="-8" id="zC6-7X-dLq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pabloparejo.png" width="368" height="368"/>
+    </resources>
+</document>

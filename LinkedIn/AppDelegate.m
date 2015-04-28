@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PARProfileViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    PARProfileViewController *vc = [PARProfileViewController new];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:navVC];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

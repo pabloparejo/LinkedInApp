@@ -24,8 +24,16 @@
     self.model = @{ @"name": @"Pablo Parejo",
                     @"birthdate": birthdate,
                     @"skills": @[@"iOS",@"Android", @"HTML", @"CSS", @"Django"],
-                    @"education": @"Telecomm Engineering, URJC"};
+                    @"education": @"Telecomm Engineering, URJC",
+                    @"occupation": @"Frontend Developer & UX/UI Designer"};
     
+    
+    [self setTitle:@"Curriculum Vitae"];
+    [self.nameLabel setText:[self.model objectForKey:@"name"]];
+    [self.educationLabel setText:[self.model objectForKey:@"education"]];
+    [self.occupationLabel setText:[self.model objectForKey:@"occupation"]];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,14 +41,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Actions
+
+- (IBAction)sendEmail:(id)sender {
+    
 }
-*/
-
 @end

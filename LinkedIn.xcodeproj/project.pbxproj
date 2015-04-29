@@ -14,7 +14,7 @@
 		C5730A101AF002B000CAEE24 /* LinkedInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5730A0F1AF002B000CAEE24 /* LinkedInTests.m */; };
 		C5730A1D1AF00B6D00CAEE24 /* PARProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */; };
 		C5730A1E1AF00B6D00CAEE24 /* PARProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */; };
-		C5730A211AF015F900CAEE24 /* pabloparejo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5730A201AF015F900CAEE24 /* pabloparejo.png */; };
+		C5730A251AF1571F00CAEE24 /* pabloparejo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5730A241AF1571F00CAEE24 /* pabloparejo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		C5730A1A1AF00B6D00CAEE24 /* PARProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARProfileViewController.h; sourceTree = "<group>"; };
 		C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARProfileViewController.m; sourceTree = "<group>"; };
 		C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PARProfileViewController.xib; sourceTree = "<group>"; };
-		C5730A201AF015F900CAEE24 /* pabloparejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pabloparejo.png; sourceTree = "<group>"; };
+		C5730A241AF1571F00CAEE24 /* pabloparejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pabloparejo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 			children = (
 				C57309F71AF002B000CAEE24 /* AppDelegate.h */,
 				C57309F81AF002B000CAEE24 /* AppDelegate.m */,
-				C5730A201AF015F900CAEE24 /* pabloparejo.png */,
+				C5730A241AF1571F00CAEE24 /* pabloparejo.png */,
 				C5730A1F1AF00B7800CAEE24 /* Profile */,
 				C5730A001AF002B000CAEE24 /* Images.xcassets */,
 				C5730A021AF002B000CAEE24 /* LaunchScreen.xib */,
@@ -211,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5730A041AF002B000CAEE24 /* LaunchScreen.xib in Resources */,
-				C5730A211AF015F900CAEE24 /* pabloparejo.png in Resources */,
+				C5730A251AF1571F00CAEE24 /* pabloparejo.png in Resources */,
 				C5730A1E1AF00B6D00CAEE24 /* PARProfileViewController.xib in Resources */,
 				C5730A011AF002B000CAEE24 /* Images.xcassets in Resources */,
 			);

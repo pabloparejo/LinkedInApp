@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface PARProfileViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *occupationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *educationLabel;
+
+- (IBAction)sendEmail:(id)sender;
 
 @end

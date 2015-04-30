@@ -21,6 +21,9 @@
     PARProfileViewController *vc = [PARProfileViewController new];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:0.13 green:0.26 blue:0.4 alpha:1]}
+     ];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setRootViewController:navVC];
     [self.window makeKeyAndVisible];

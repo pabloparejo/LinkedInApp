@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PARProfileViewController">
@@ -21,15 +22,6 @@
                     <rect key="frame" x="0.0" y="60" width="320" height="266"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="occupationLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-ao-Dvl">
-                    <rect key="frame" x="8" y="334" width="304" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="6Ls-VK-U65"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqt-Qo-BIj">
                     <rect key="frame" x="0.0" y="280" width="320" height="46"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HJ1-d6-vxB">
@@ -61,25 +53,48 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educationLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tY-VL-B3n">
                     <rect key="frame" x="8" y="363" width="304" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.1333333333" green="0.2666666667" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="279" width="584" height="21"/>
+                    </variation>
                 </label>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfj-g0-3Xf">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <items>
                         <barButtonItem systemItem="compose" id="1YJ-Q3-vFW">
+                            <color key="tintColor" red="0.1333333333" green="0.2666666667" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="sendEmail:" destination="-1" id="0GY-qH-4Zv"/>
                             </connections>
                         </barButtonItem>
                     </items>
+                    <variation key="heightClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                    </variation>
                 </toolbar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="occupationLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-ao-Dvl">
+                    <rect key="frame" x="8" y="334" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6Ls-VK-U65"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.1333333333" green="0.2666666667" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact" misplaced="YES">
+                        <rect key="frame" x="328" y="37" width="584" height="21"/>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="1tY-VL-B3n" firstAttribute="height" secondItem="CQ5-ao-Dvl" secondAttribute="height" id="494-hq-dAV"/>
+                <constraint firstItem="uqt-Qo-BIj" firstAttribute="width" secondItem="ozT-XQ-vHa" secondAttribute="width" id="5kE-Ws-5e2"/>
                 <constraint firstItem="1tY-VL-B3n" firstAttribute="centerX" secondItem="CQ5-ao-Dvl" secondAttribute="centerX" id="9tz-3j-mgs"/>
-                <constraint firstAttribute="trailing" secondItem="ozT-XQ-vHa" secondAttribute="trailing" id="M8q-PW-xTD"/>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Apg-ZK-RLO"/>
+                <constraint firstAttribute="trailing" secondItem="ozT-XQ-vHa" secondAttribute="trailing" id="M8q-PW-xTD">
+                    <variation key="heightClass=compact" constant="280"/>
+                </constraint>
                 <constraint firstAttribute="trailing" secondItem="uqt-Qo-BIj" secondAttribute="trailing" id="Mqz-ES-aA9"/>
                 <constraint firstItem="uqt-Qo-BIj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OP1-zb-dPt"/>
                 <constraint firstAttribute="trailing" secondItem="CQ5-ao-Dvl" secondAttribute="trailing" constant="8" id="T1k-ON-9eM"/>
@@ -88,11 +103,33 @@
                 <constraint firstItem="CQ5-ao-Dvl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dTb-wz-9nK"/>
                 <constraint firstItem="ozT-XQ-vHa" firstAttribute="bottom" secondItem="uqt-Qo-BIj" secondAttribute="bottom" id="i39-r5-eSo"/>
                 <constraint firstItem="1tY-VL-B3n" firstAttribute="width" secondItem="CQ5-ao-Dvl" secondAttribute="width" id="idJ-7X-KxQ"/>
+                <constraint firstItem="CQ5-ao-Dvl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="kY0-N4-wHr"/>
                 <constraint firstItem="ozT-XQ-vHa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lnu-D3-Epc"/>
-                <constraint firstItem="ozT-XQ-vHa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="xBe-OK-95o"/>
-                <constraint firstItem="ozT-XQ-vHa" firstAttribute="bottom" secondItem="CQ5-ao-Dvl" secondAttribute="top" constant="-8" id="zC6-7X-dLq"/>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="xBe-OK-95o">
+                    <variation key="heightClass=compact" constant="37"/>
+                </constraint>
+                <constraint firstItem="ozT-XQ-vHa" firstAttribute="bottom" secondItem="CQ5-ao-Dvl" secondAttribute="top" constant="-8" id="zC6-7X-dLq">
+                    <variation key="heightClass=compact" constant="357"/>
+                </constraint>
             </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="kY0-N4-wHr"/>
+                    <exclude reference="5kE-Ws-5e2"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="Apg-ZK-RLO"/>
+                    <exclude reference="zC6-7X-dLq"/>
+                    <exclude reference="aoL-X5-sN7"/>
+                    <exclude reference="dTb-wz-9nK"/>
+                    <include reference="kY0-N4-wHr"/>
+                    <include reference="5kE-Ws-5e2"/>
+                    <exclude reference="Mqz-ES-aA9"/>
+                </mask>
+            </variation>
         </view>
     </objects>
     <resources>

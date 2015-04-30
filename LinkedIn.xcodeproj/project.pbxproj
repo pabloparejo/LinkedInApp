@@ -15,6 +15,7 @@
 		C5730A1D1AF00B6D00CAEE24 /* PARProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */; };
 		C5730A1E1AF00B6D00CAEE24 /* PARProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */; };
 		C5730A251AF1571F00CAEE24 /* pabloparejo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5730A241AF1571F00CAEE24 /* pabloparejo.png */; };
+		C5730A271AF167FF00CAEE24 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5730A261AF167FF00CAEE24 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		C5730A1B1AF00B6D00CAEE24 /* PARProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARProfileViewController.m; sourceTree = "<group>"; };
 		C5730A1C1AF00B6D00CAEE24 /* PARProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PARProfileViewController.xib; sourceTree = "<group>"; };
 		C5730A241AF1571F00CAEE24 /* pabloparejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pabloparejo.png; sourceTree = "<group>"; };
+		C5730A261AF167FF00CAEE24 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5730A271AF167FF00CAEE24 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 		C57309E71AF002B000CAEE24 = {
 			isa = PBXGroup;
 			children = (
+				C5730A261AF167FF00CAEE24 /* MessageUI.framework */,
 				C57309F21AF002B000CAEE24 /* LinkedIn */,
 				C5730A0C1AF002B000CAEE24 /* LinkedInTests */,
 				C57309F11AF002B000CAEE24 /* Products */,
